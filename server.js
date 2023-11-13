@@ -34,7 +34,8 @@ mongoose
   .connect(DB, {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    useunifiedtopology: true
   })
   .then(() => console.log('DB connection successful!'));
 
