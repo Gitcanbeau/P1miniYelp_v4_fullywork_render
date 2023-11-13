@@ -1,0 +1,45 @@
+extends base
+
+block content
+  main.main
+    .card-container
+    
+      each restaurant in restaurants
+        .card
+          .card__header
+            .card__picture
+              .card__picture-overlay &nbsp;
+              img.card__picture-img(src=`/img/restaurants/${restaurant.imageCover}`, alt=`${restaurant.name}`)
+            h3.heading-tertirary
+              span= restaurant.name
+
+          .card__details
+            h4.card__sub-heading= `${restaurant.difficulty} ${restaurant.duration}-day restaurant`
+            p.card__text= restaurant.summary
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-map-pin')
+              span= restaurant.startLocation.description
+            //- .card__data
+            //-   svg.card__icon
+            //-     use(xlink:href='/img/icons.svg#icon-calendar')
+            //-   span= restaurant.startDates[0].toLocaleString('en-us', {month: 'long', year: 'numeric'})
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-flag')
+              span= `${restaurant.locations.length} stops`
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-user')
+              span= `${restaurant.maxGroupSize} people`
+
+          .card__footer
+            p
+              span.card__footer-value= `$${restaurant.price}`
+              | 
+              span.card__footer-text per person
+            p.card__ratings
+              span.card__footer-value= restaurant.ratingsAverage
+              | 
+              span.card__footer-text= `rating (${restaurant.ratingsQuantity})`
+            a.btn.btn--green.btn--small(href=`/restaurant/${restaurant.slug}`) Details

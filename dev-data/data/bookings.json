@@ -1,0 +1,45 @@
+[
+    {
+      "restaurant": "5c88fa8cf4afda39709c2955",
+      "user": "5c8a24a02f8fb814b56fa193",
+      "price": 25,
+      "createdAt":"2021-04-25,10:00",
+      "paid":true
+    },
+    {
+        "restaurant": "5c88fa8cf4afda39709c2966",
+        "user": "5c8a24402f8fb814b56fa190",
+        "price": 45,
+        "createdAt":"2021-04-25,11:00",
+        "paid":true
+    },
+    {
+        "restaurant": "5c88fa8cf4afda39709c295d",
+        "user": "5c8a245f2f8fb814b56fa191",
+        "price": 38,
+        "createdAt":"2022-04-25,12:00",
+        "paid":false
+    },
+    {
+        "restaurant": "5c88fa8cf4afda39709c2961",
+        "user": "5c8a24822f8fb814b56fa192",
+        "price": 55,
+        "createdAt":"2022-04-25,13:00",
+        "paid":true
+    },
+    {
+        "restaurant": "5c88fa8cf4afda39709c295a",
+        "user": "5c8a23de2f8fb814b56fa18e",
+        "price": 75,
+        "createdAt":"2022-04-25,14:00",
+        "paid":false
+    },
+    {
+        "restaurant": "5c88fa8cf4afda39709c2951",
+        "user": "5c8a24282f8fb814b56fa18f",
+        "price": 43,
+        "createdAt":"2023-04-25,15:00",
+        "paid":true
+    }
+    
+]
